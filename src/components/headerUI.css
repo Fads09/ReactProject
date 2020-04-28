@@ -1,0 +1,27 @@
+nav {
+    margin: 0;
+    width: 100%;
+    background: aqua;
+    text-align: center;
+  }
+  
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  ul li:hover {
+    background:rgb(0,0,0,0.3);
+  }
+  
+  ul li a {
+    color: #111;
+    text-decoration: none;
+  }
