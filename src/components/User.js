@@ -7,9 +7,9 @@ import ReactPlayer from "react-player"
 
 
 const videos = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category: 'java' },
-                { address: 'https://www.youtube.com/watch?v=RRubcjpTkks', category: 'java' },
-                { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'java' },
-                { address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category: 'java' }, 
+                { address: 'https://www.youtube.com/watch?v=RRubcjpTkks', category: 'C#' },
+                { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'javascript' },
+                { address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category: 'React' }, 
                 { address: 'https://www.youtube.com/watch?v=RRubcjpTkks', category: 'java' }, 
                 { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'java' } ];
 
@@ -21,14 +21,18 @@ const User = props => {
   return (
       <div className="box">
         {/* <h2>Welcome {user.name} to your account overview </h2> */}
-        {/* <nav>
-          <ul className="list">
-          <li><a href="/html/">HTML</a></li>
-          <li><a href="/css/">CSS</a></li>
-          <li><a href="/js/">JavaScript</a></li>
-          <li><a href="/jquery/">jQuery</a></li>
-          </ul>
-        </nav> */}
+        <button>
+          java
+        </button>
+        <button>
+          C#
+        </button>
+        <button>
+          javascript
+        </button>
+        <button>
+          React
+        </button>
         <div class="content">
           <div class="wrapper">
               {videos.map(video => (
