@@ -122,4 +122,15 @@ li{
   cursor:pointer;
   width: 80px;
 }
+.buttons-filter{
+
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: yellow;
+  cursor: pointer;
+  outline: none;
+  padding:10px
+}
 
