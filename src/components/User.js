@@ -11,6 +11,9 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
                 { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'javascript' },
                 { address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category: 'React' }, 
                 { address: 'https://www.youtube.com/watch?v=RRubcjpTkks', category: 'java' }, 
+                { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'java' },
+                { address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category: 'React' }, 
+                { address: 'https://www.youtube.com/watch?v=RRubcjpTkks', category: 'java' }, 
                 { address: 'https://www.youtube.com/watch?v=GoXwIVyNvX0', category: 'java' } ];
 
  class User extends React.Component { 
@@ -20,6 +23,7 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
       videos : data,
      }
    }
+
   //Not part of requirements yet
   // const user = UserAPI.get(parseInt(props.match.params.number, 10));
   // if (!user) {
@@ -27,19 +31,19 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
   // }
 
     render(){
-      console.log(this.state);
+
     return (
         <div className="box">
           {/* <h2>Welcome {user.name} to your account overview </h2> */}
           <div className="buttons-filter">
-        <button onClick={()=>{
+          <button onClick={()=>{
             this.setState({videos: data })
             
           }}>All</button>
           <button id="btnJava" onClick={()=>{
                this.setState({videos: data },()=>{
                 this.setState({
-                  videos: this.state.videos.filter(item => { return item.category=='java';})
+                  videos: this.state.videos.filter(item => { return item.category === 'java';})
               })
                })           
             
@@ -49,7 +53,7 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
           <button id="btnC#"onClick={()=>{
               this.setState({videos: data },()=>{
                 this.setState({
-                  videos: this.state.videos.filter(item => { return item.category=='C#';})
+                  videos: this.state.videos.filter(item => { return item.category==='C#';})
               })})
  
           }}>
@@ -58,7 +62,7 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
           <button id="btnjs" onClick={()=>{
             this.setState({videos: data },()=>{
               this.setState({
-                videos: this.state.videos.filter(item => { return item.category=='javascript';})
+                videos: this.state.videos.filter(item => { return item.category==='javascript';})
             })
             })
 
@@ -69,7 +73,7 @@ const data = [{ address: 'https://www.youtube.com/watch?v=eIrMbAQSU34', category
           <button id="btnReact" onClick={()=>{
             this.setState({videos: data },()=>{
               this.setState({
-                videos: this.state.videos.filter(item => {return item.category=='React';})
+                videos: this.state.videos.filter(item => {return item.category==='React';})
             })
             })
            

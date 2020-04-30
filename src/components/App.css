@@ -10,41 +10,61 @@ html,
 
 .container {
   font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #282c34;
+  background-color: #1189de;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  min-height: 55px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
 
 .topnav {
-  background-color: #333;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-li{
+.topnav ul{
+  padding-top: 5px;
+
+}
+
+.topnav li{
   list-style-type: none;
+  float: right;
 } 
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav li:hover{
+  background-color: transparent;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+.topnav a:hover {
+  color: #1189de;
+  background-color: transparent;
 }
 
 .loginForm {
@@ -55,11 +75,27 @@ li{
   padding-right: 20px;
 }
 
+.loginFormWrapper{
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  width: 400px;
+  height: 310px;
+  box-shadow: 1px 1px 5px #333;
+  border-radius: 2px;
+}
+
+.wrap{
+  padding-top: 50px;
+}
 .inputField {
+  font-family: 'Times New Roman', Times, serif;
   padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .input {
+  font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
   outline: none;
   border: solid 2px #1189de;
@@ -72,20 +108,25 @@ li{
 }
 
 .submitButton {
-  padding-top: 16px;
+  padding-top: 26px;
+  padding-left: 4.500em;
+  padding-right: 4.500em;
+  text-align: center;
+  
 }
 
 .btn {
   width: 100%;
-  min-width: 280px;
-  color: #565656;
+  min-width: 160px;
   padding: 12px;
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
   border: solid 2px #1189de;
-  border-radius: 4px;
-  background: #fff;
+  border-radius: 50px;
+  background-color: #77c524;
   cursor: pointer;
+  color: #fff;
 }
 
 .link {
@@ -109,8 +150,6 @@ li{
   text-align: end;
   padding-left: 10px;
 
-
-
 }
 
 .btn-logout {
@@ -122,8 +161,8 @@ li{
   cursor:pointer;
   width: 80px;
 }
-.buttons-filter{
 
+.buttons-filter{
   margin: 5px;
   padding: 10px;
   border: none;
