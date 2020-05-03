@@ -8,8 +8,8 @@ const Header = () => (
   <header >
     <nav className='topnav'>
       <img  className="logo-img"
-            src="https://becloudready.com/wp-content/uploads/2020/03/logo-no-text-small-150.svg" 
-            srcset="https://becloudready.com/wp-content/uploads/2020/03/logo-no-text-small-150.svg 1x"
+            src="" 
+            srcset=""
             width="" 
             height="40px" 
             alt="AI, Big Data and Cloud Logo"/>

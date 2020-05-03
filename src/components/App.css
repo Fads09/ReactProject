@@ -40,6 +40,7 @@ header{
   top: 0;
   overflow: hidden;
   width: 100%;
+  border-bottom: 1px solid rgba(142, 142, 142, 0.5);
 }
 
 .topnav a {
@@ -87,6 +88,7 @@ header{
 .wrap{
   padding-top: 50px;
 }
+
 .inputField {
   font-family: 'Times New Roman', Times, serif;
   padding-top: 16px;
@@ -135,15 +137,25 @@ header{
 }
 
 .box{
+  padding-top: 500px;
   font-size: 28px;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #282c34;
+  background-color: #1189de;
 }
 
+.box button{
+  padding: 5px 50px;
+  margin-right: 50px; 
+  
+}
+
+.buttons-filter{
+  text-align: center;
+}
 
 .vid {
   float: left;
@@ -163,11 +175,12 @@ header{
 }
 
 .buttons-filter{
+  width: 100%;
   margin: 5px;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: yellow;
+  background: #fff;
   cursor: pointer;
   outline: none;
   padding:10px
