@@ -8,8 +8,12 @@ import User from "./User";
 const Login = () => (
   
   <Switch>
-    <Route exact path="/Login" component={LoginForm} />
-    <Route path="/Login/:number" component={User} />
+    <div className="LoginWrap">
+      <Route exact path="/Login" component={LoginForm} />
+
+
+      <Route path="/Login/:number" component={User} />
+    </div>
   </Switch>
   
 );
